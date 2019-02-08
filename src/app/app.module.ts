@@ -9,16 +9,20 @@ import { environment } from "../environments/environment";
 import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  declarations: [AppComponent, ...declarations],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ServiceWorkerModule.register("ngsw-worker.js", {
-      enabled: environment.production
-    })
-  ],
+   declarations: [
+      AppComponent,
+      ...declarations
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      HttpClientModule,
+      FormsModule,
+      ServiceWorkerModule.register("ngsw-worker.js", {
+         enabled: environment.production
+       })
+   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

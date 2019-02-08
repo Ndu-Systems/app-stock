@@ -13,5 +13,13 @@ export class CategoryService {
   getCatagories(): Observable<any>{
     return this.http.get<any>(`${API_BASE}/api/categories/get-categories.php`);
   }
-
+  getStockItemNames(): Observable<any>{
+    return this.http.get<any>(`${API_BASE}/api/stock-details/get-stock-details.php`);
+  }
+  addStockItem(data): Observable<any>{
+    return this.http.post(`${API_BASE}/api/stock/add-stock.php`,data);
+  }
+  getStockItems(): Observable<any>{
+    return this.http.get<any>(`${API_BASE}/api/stock/get-stock.php`);
+  }
 }

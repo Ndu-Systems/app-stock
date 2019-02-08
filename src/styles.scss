@@ -25,6 +25,10 @@ body{
 } 
 .btn-sucess{
     background: #27AE60;
+
+    &:disabled{
+        background: rgb(140, 204, 167);    
+    }
 }
 .scanner-hodler{
     position: absolute;
@@ -34,4 +38,32 @@ body{
     left: 0;
     padding: 10%;
     height: 50rem;
+}
+
+.add-option{
+background: #27AE60;
+
+}
+
+.message{
+    margin:4rem 0;
+    box-sizing: border-box;
+    padding: 5%;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(39, 174, 95, 0.335);
+    transition: 1s ease-in-out;
+
+    img{
+        width: 8%;
+        margin: 0 .5rem;
+        display: none;
+    }
+}
+
+.scann-btn{
+    margin:  2rem 0rem;
+    .barcode{
+        letter-spacing: .5rem;
+    }
 }

@@ -6,6 +6,7 @@ import { AddStockItemComponent } from "./views/add-stock-item/add-stock-item.com
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { HomePageComponent } from "./views/home-page/home-page.component";
+import { StockOutReasonComponent } from './stock-out-reason/stock-out-reason.component';
 
 export const declarations = [
   HomePageComponent,
@@ -13,7 +14,7 @@ export const declarations = [
   PagesHearderComponent,
   RemoveStockItemComponent,
   StockItemListComponent,
-  ScannerComponent
+  ScannerComponent, StockOutReasonComponent
 ];
 const routes: Routes = [
   { path: "", component: HomePageComponent },

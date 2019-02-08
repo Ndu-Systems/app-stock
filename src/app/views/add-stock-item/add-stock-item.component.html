@@ -15,21 +15,25 @@
 
     <div class="form-group"  *ngIf="categories$ | async as categories">
       <label>ITEM CATERGORY</label>
-      <select class="input" [(ngModel)]="itemCategory"  >
+      <select class="input" [(ngModel)]="itemCategory"   (change)="onCategoryChange($event)" >
         <option *ngFor="let data of categories.categories" [value]="data.categoryId">{{data.name}}</option>
       </select>
     </div>
 
     <div class="form-group">
       <label>ITEM NAME</label>
-      <select class="input">
-        <option value="">Water Case x 6</option>
-        <option value="">Ndu</option>
+      <select class="input" [(ngModel)]="itemId">
+        <option *ngFor="let data of stockItemsFiltered" [value]="data.stock_detailsId">{{data.name}}</option>
       </select>
-    </div>
+    </div>  
 
     <div class="form-group">
       <button class="btn btn-sucess" (click)="add()">Add</button>
+    </div>
+
+    <div class="message" *ngIf="canShowMessage">
+      <img src="../../../assets/home/info-circle-solid.svg" alt="">
+      {{message}}
     </div>
   </div>
 </section>
