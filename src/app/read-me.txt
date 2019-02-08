@@ -1,0 +1,7 @@
+-Push Notifications
+npm install web-push -g
+web-push generate-vapid-keys --json
+
+
+{"publicKey":"BDD8jtmMxBEYV4dd3hl8I1KqVkc2h1__I8h9-TEKP1mhQHc52y5Klts7FDitXIdi2iWNSYMKO-n_p8v-OzPdkrQ","privateKey":"ZmwkkbeveYMQXIhR4zolO_lhNXD9DfhBT9mABajcwhc"}
+

@@ -1,0 +1,17 @@
+<div *ngIf="barcode">
+ <h1>
+    {{ barcode }}
+ </h1>
+</div>
+<button type="button" class="btn  btn-sucess" (click)="startScanner()">
+  TRY AGAIN
+</button>
+<button type="button" class="btn  btn-sucess" (click)="continue()">
+  CONTINUE
+</button>
+
+<div class="input-group">
+  <div id="inputBarcode">
+      <div id="interactive" class="viewport"></div>
+  </div>
+</div>

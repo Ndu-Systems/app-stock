@@ -1,0 +1,48 @@
+.header {
+  height: 35vh;
+  width: 100%;
+  background-image: url(../../../../assets/home/bg-top-pages.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: -1rem;
+  position: relative;
+  padding: 3%;
+  padding-top: 12%;
+
+  .top-bar {
+    display: flex;
+    margin-bottom: 1%;
+
+    .logo,
+    .menu {
+      flex: 1;
+
+    }
+
+    .logo {
+      img {
+        width: 35%;
+      }
+    }
+
+    .menu {
+      text-align: right;
+      padding-right: 10%;
+      padding-top: 2%;
+      img{
+        width: 25%;
+    }
+    }
+  }
+
+  .heading {
+    width: 100%;
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+}

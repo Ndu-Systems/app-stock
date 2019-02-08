@@ -1,0 +1,159 @@
+.main-home {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../../../assets/home/bg-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: -1rem;
+  position: relative;
+  padding: 3%;
+  padding-top: 12%;
+
+  .to-bar {
+    display: flex;
+    margin-bottom: 20%;
+
+    .logo,
+    .menu {
+      flex: 1;
+    }
+.logo{
+  img{
+    width: 35%;
+  }
+}
+    .menu {
+      text-align: right;
+      padding-right: 10%;
+      padding-top: 2%;
+      img{
+        width: 25%;
+      }
+    }
+  }
+
+
+  .stock-level {
+    margin: 0 auto;
+    background: white;
+    padding: 5%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10%;
+
+    .level {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 2%;
+        color: #27AE60;
+      }
+
+      h3 {
+        font-weight: 300;
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-weight: 300;
+        padding: 2%;
+        font-size: 1rem;
+      }
+    }
+
+  }
+
+  .dashboard {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 4%;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 10px -1px 83px -21px rgba(0, 0, 0, 1);
+
+
+    ul {
+      list-style: none;
+      padding: 2rem .1rem;
+
+      li {
+        display: flex;
+        border-bottom: .05rem solid #d4d4d4;
+        padding: 5%;
+        color: rgb(73, 71, 71);
+        font-weight: 300;
+
+        .status {
+          flex: .2;
+          text-align: right;
+
+          span {
+            background: #000;
+            width: .8rem;
+            height: .8rem;
+            border-radius: .8rem;
+            margin-top: .2rem;
+            margin-right: .4rem;
+            display: block;
+            float: right;
+            box-shadow: 10px -1px 100px -21px rgb(77, 72, 72);
+
+          }
+
+          .class-1 {
+            background: #CE171F;
+          }
+
+          .class-2 {
+            background: #F39C12;
+          }
+
+          .class-3 {
+            background: #27AE60;
+          }
+        }
+
+        span:nth-child(2) {
+          font-size: .9rem;
+          flex: 3;
+          a{
+            color: #000;
+            text-decoration: none;
+          }
+
+        }
+
+        span:nth-child(3) {
+          flex: 1;
+          text-align: right;
+
+        }
+      }
+    }
+
+
+  }
+
+  .buttons {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 5% 0;
+    text-align: right;
+
+    div {
+      width: 20%;
+      display: inline-block;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
